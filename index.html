@@ -2,30 +2,56 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>My Emergency Watch - プライバシーポリシー</title>
+    <title>My Emergency Watch</title>
+
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
-        h1 { color: #d32f2f; border-bottom: 2px solid #d32f2f; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #666; }
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; color: #333; }
+        h1 { color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; }
+        h2 { color: #d32f2f; margin-top: 30px; }
+
+        /* ナビゲーションメニュー */
+        nav { background: #f8f8f8; padding: 10px; border-radius: 8px; margin-bottom: 20px; }
+        nav a { text-decoration: none; color: #d32f2f; font-weight: bold; margin-right: 15px; }
+        nav a:hover { text-decoration: underline; }
+
+        /* カード風リンク */
+        .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 10px; transition: 0.3s; }
+        .card:hover { background-color: #fff5f5; border-color: #d32f2f; }
+
+        .footer { margin-top: 50px; font-size: 0.8em; color: #666; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
-<body>
-    <h1>プライバシーポリシー</h1>
-    <p>My Emergency Watch（以下「本アプリ」）は、ユーザーの安全・安心のための、「見守り・防犯ブザー」での通知サービスを提供します。</p>
-    
-    <h3>1. 取得する情報と利用目的</h3>
-    <ul>
-        <li><b>ヘルスコネクト歩数:</b> バックグラウンド実行中も含め、歩数の変動を検知し活動停止の判断に利用します。</li>
-        <li><b>位置情報:</b> バックグラウンド実行中も含め、活動停止の判断及び緊急時の連絡先に現在地を通知するために利用します。</li>
-        <li><b>連絡先情報:</b> ユーザーが設定した緊急時連絡先（電話及びSMS・メール）へ通知を送るために利用します。</li>
-    </ul>
 
-    <h3>2. データの管理</h3>
-    <p>取得した情報は通知送信の目的以外には使用せず、第三者に提供することはありません。</p>
+<body>
+
+    <nav>
+        <a href="index.html">トップ</a>
+        <a href="setup.html">初期設定</a>
+        <a href="kiosk.html">上級者向け設定</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+
+    <h1>My Emergency Watch</h1>
+
+    <p>My Emergency Watch は、歩数と位置情報を用いて活動停止を検知し、緊急連絡先へ通知する見守りアプリです。</p>
+
+    <h2>ガイド</h2>
+
+    <div class="card">
+        <a href="setup.html">初期設定ガイド（Googleアプリパスワードの取得）</a>
+    </div>
+
+    <div class="card">
+        <a href="kiosk.html">上級者向け設定（キオスク化 / adb）</a>
+    </div>
+
+    <div class="card">
+        <a href="privacy.html">プライバシーポリシー</a>
+    </div>
 
     <div class="footer">
-        発行日: 2026年3月18日<br>
-        作成者: yosibon
+        © 2026 My Emergency Watch
     </div>
+
 </body>
 </html>
